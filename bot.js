@@ -16,7 +16,7 @@ bot.on("message", (ctx) => {
     }
 
     if (user != null) {
-      if (lastFrom == message.from.id && lastId == user.id) {
+      if (lastFrom == ctx.from.id && lastId == user.id) {
         return;
       }
       if (user.username != null) {
